@@ -1,24 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Budget Tracker</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-<h1>My Budget Tracker</h1>
+
+<header class="card">
+<h1>Budget Tracker</h1>
+<p>My Monthly Budget</p>
+</header>
+
+<section class="card">
+<h2>Add Expense</h2>
+<form>
+<label>Description</label>
+<input type="text" placeholder="e.g. Groceries" required>
+<label>Amount</label>
+<input type="number" placeholder="e.g. 50" required>
+<label>Category</label>
+<input type="text" placeholder="e.g. Food">
+<button type="submit">Add Expense</button>
+<button type="button" class="clear">Clear</button>
+</form>
+</section>
+
+<section class="card">
+<h2>Expenses</h2>
 <table>
 <thead>
-<tr><th>Date</th><th>Description</th><th>Amount (Ksh)</th></tr>
+<tr><th>Description</th><th>Amount</th><th>Category</th></tr>
 </thead>
 <tbody>
-<tr><td>22/09/2026</td><td>Food</td><td>500</td></tr>
-<tr><td>22/09/2026</td><td>Transport</td><td>200</td></tr>
-<tr><td>22/09/2026</td><td>Airtime</td><td>100</td></tr>
+<tr><td>Rent</td><td>$800</td><td>Housing</td></tr>
+<tr><td>Food</td><td>$100</td><td>Food</td></tr>
+<tr><td>Bus</td><td>$20</td><td>Transport</td></tr>
 </tbody>
 </table>
-</div>
+</section>
+
 </body>
 </html>
